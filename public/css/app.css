@@ -10673,7 +10673,7 @@ body {
 }
 
 #sidebar-wrapper {
-  min-height: 100vh;
+  min-height: calc(100vh - 58px);
   margin-left: -15rem;
   transition: margin 0.25s ease-out;
 }
