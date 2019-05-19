@@ -28,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
         Blade::component('users.name', 'infopage');
 
         view()->composer('users.*', function ($view) {
-            $view->with('allusers', User::all());
+            $view->with('allusers', User::all()->sortByDesc('created_at'));
         });
     }
 }

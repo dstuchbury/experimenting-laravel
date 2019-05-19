@@ -42,8 +42,7 @@ Option 2 returns 401 Unauthorised
 // Option 1
 Route::get('users/{user}', 'WelcomeController@show')
     ->where('user', '[1-9]+')
-    ->name('users.show')
-    ->middleware('signed');
+    ->name('users.show');
 
 // Option 1
 //Route::get('users/{id}', function (\Illuminate\Http\Request $request) {
