@@ -13,9 +13,8 @@
 <body>
 
 <div class="app">
-    @include('partials.nav')
 
-    @yield('content')
+{{--    @yield('content')--}}
 
 </div>
 

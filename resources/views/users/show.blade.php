@@ -1,6 +1,15 @@
-@extends('layouts.master')
+@extends('layouts.sidebarmaster')
 
 @section('title', $user->name)
+
+@section('sidebar')
+    <div class="sidebar-heading">Sidebar</div>
+    <div class="list-group list-group-flush">
+        @foreach($allusers as $sidebarUser)
+            <a href="{{ URL::signedRoute('users.show', ['user' => $sidebarUser->id]) }}" class="list-group-item list-group-item-action bg-light">{{ $sidebarUser->name }}</a>
+        @endforeach
+    </div>
+@endsection
 
 @section('content')
 
@@ -24,5 +33,5 @@
     @endinfopage
 
     @endsection
-    
+
 </div>

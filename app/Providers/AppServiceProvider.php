@@ -27,8 +27,8 @@ class AppServiceProvider extends ServiceProvider
     {
         Blade::component('users.name', 'infopage');
 
-        view()->composer('partials.sidebar', function ($view) {
-            $view->with('users', User::all());
+        view()->composer('users.*', function ($view) {
+            $view->with('allusers', User::all());
         });
     }
 }
