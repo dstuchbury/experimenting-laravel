@@ -3,22 +3,26 @@
 @section('title', $user->name)
 
 @section('content')
-<h1>Users.Show</h1>
 
-@infopage
-    @slot('heading')
-        {{ $user->name }}
-    @endslot
+<div class="py-4 px-4">
+    <h1>Users.Show</h1>
 
-    @slot('pill')
-    {{ $user->id }}
-    @endslot
+    @infopage
+        @slot('heading')
+            {{ $user->name }}
+        @endslot
 
-    @slot('description')
-        This guy is a legend
-    @endslot
+        @slot('pill')
+        {{ $user->id }}
+        @endslot
 
-    Other text in the component
-@endinfopage
+        @slot('description')
+            This guy is a legend
+        @endslot
 
-@endsection
+        Other text in the component
+    @endinfopage
+
+    @endsection
+    
+</div>
