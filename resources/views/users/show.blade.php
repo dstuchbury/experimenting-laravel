@@ -32,6 +32,6 @@
         Other text in the component
     @enduserinfo
 
-    @endsection
-
 </div>
+
+@endsection
