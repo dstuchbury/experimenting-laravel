@@ -16,7 +16,7 @@
 <div class="py-4 px-4">
     <h1>Users.Show</h1>
 
-    @infopage
+    @userinfo
         @slot('heading')
             {{ $user->name }}
         @endslot
@@ -30,7 +30,7 @@
         @endslot
 
         Other text in the component
-    @endinfopage
+    @enduserinfo
 
     @endsection
 

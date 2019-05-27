@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Blade::component('users.name', 'infopage');
+        Blade::component('users.name', 'userinfo');
 
         view()->composer('users.*', function ($view) {
             $view->with('allusers', User::all()->sortByDesc('created_at'));
